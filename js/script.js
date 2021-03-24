@@ -77,22 +77,57 @@
     // console.log(index,inputSurname);
 
 //---------------------------------------------------------------------------//
+//------------------------------ 24/03/2021 ---------------------------------//
 
     //ESERCIZIO 5
     //- Creare un oggetto che descriva uno studente con le
     // seguenti proprietà: nome, cognome e età. Stampare a
     // schermo attraverso il for in tutte le proprietà.
 
-    function objectStudent() {
-         var student = {
-           'name': 'Giovanni',
-           'surname': 'Bernardi',
-           'eta': 22
-         };
+    // function objectStudent() {
+    //      var student = {
+    //        'name': 'Giovanni',
+    //        'surname': 'Bernardi',
+    //        'eta': 22
+    //      };
               
-         for (var i in student) {
-           var studentData = 'student' + i + ' = ' + student[i];
-           console.log(studentData);
-         }
-    }
+    //      for (var i in student) {
+    //        var studentData = 'student' + i + ' = ' + student[i];
+    //        console.log(studentData);
+    //      }
+    // }
     
+//-----------------------------------------------------------------------------//
+
+    //ESERCIZIO 6
+    //Creare un array di oggetti di studenti. Ciclare su tutti gli
+    //studenti e stampare per ognuno nome e cognome.
+
+    function arrStudent() {
+
+        var arr = [
+          student1 = {
+            "name" : "Giovanni" ,
+            "surname" : "Bernardi",
+          },
+          student2 = {
+            "name" : "Anna",
+            "surname" : "Pippoli",
+          },
+          student3 = {
+            "name" : "Barack",
+            "surname" : "Obama",
+          },
+          student4 = {
+            "name" : "Vladimir",
+            "surname" : "Putin",
+          },
+          student5 = {
+            "name" : "Pino",
+            "surname" : "Silvestre",
+          }
+        ]
+        for(var i = 0; i < arr.length; i++){
+        console.log(arr[i]['name'],arr[i]['surname']);
+      }
+    }
