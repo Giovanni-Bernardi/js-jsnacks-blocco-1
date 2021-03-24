@@ -14,7 +14,7 @@
     // }
     // console.log(fullnames);
 
-   
+//-------------------------------------------------------------------//   
     // ESERCIZIO 2
     // Crea due array che hanno un numero di elementi diversi.
     // Aggiungi elementi all'array che ha meno elementi fino a
@@ -38,7 +38,7 @@
     //
     // console.log(arr1, arr2);
 
-    
+//---------------------------------------------------------------------//    
     // ESERCIZIO 3
     // Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
     // finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
@@ -57,21 +57,42 @@
     //
     // console.log('Limite: ' + limit, 'Totale: ' + sum);
 
-    
+ //------------------------------------------------------------------------//   
     // ESERCIZIO 4
     // Crea due tag div con due id diversi.
     // Un div avrà il testo colorato di rosso mentre l'altro di verde.
     // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
     // dispari e in verde i numeri pari.
 
-    var numbers = [15, 20, 1, 3, 22];
-    for (var i = 0; i < numbers.length; i++) {
+    // var numbers = [15, 20, 1, 3, 22];
+    // for (var i = 0; i < numbers.length; i++) {
 
-        if (numbers[i] % 2 == 1) {
-        document.getElementById('print1').innerHTML += numbers[i] + '  ';
+    //      if (numbers[i] % 2 == 1) {
+    //         document.getElementById('print1').innerHTML += numbers[i] + '  ';
 
-    } else {
-    document.getElementById('print2').innerHTML += numbers[i] + '  ';
-  }
-}
-        console.log(index,inputSurname);
+    //     } else {
+    //     document.getElementById('print2').innerHTML += numbers[i] + '  ';
+    //   }
+    // }
+    // console.log(index,inputSurname);
+
+//---------------------------------------------------------------------------//
+
+    //ESERCIZIO 5
+    //- Creare un oggetto che descriva uno studente con le
+    // seguenti proprietà: nome, cognome e età. Stampare a
+    // schermo attraverso il for in tutte le proprietà.
+
+    function objectStudent() {
+         var student = {
+           'name': 'Giovanni',
+           'surname': 'Bernardi',
+           'eta': 22
+         };
+              
+         for (var i in student) {
+           var studentData = 'student' + i + ' = ' + student[i];
+           console.log(studentData);
+         }
+    }
+    
