@@ -80,23 +80,23 @@
 //------------------------------ 24/03/2021 ---------------------------------//
 
     //ESERCIZIO 5
-    //- Creare un oggetto che descriva uno studente con le
+    // Creare un oggetto che descriva uno studente con le
     // seguenti proprietà: nome, cognome e età. Stampare a
     // schermo attraverso il for in tutte le proprietà.
 
-    // function objectStudent() {
-    //      var student = {
-    //        'name': 'Giovanni',
-    //        'surname': 'Bernardi',
-    //        'eta': 22
-    //      };
-              
-    //      for (var i in student) {
-    //        var studentData = 'student' + i + ' = ' + student[i];
-    //        console.log(studentData);
-    //      }
-    // }
-    
+     function objectStudent() {
+          var student = {
+            'name': 'Giovanni',
+            'surname': 'Bernardi',
+            'eta': 22
+          };
+          
+          for (var i in student) {
+            var studentData = 'student' + i + ' = ' + student[i];
+            console.log(studentData);
+          }
+     }
+
 //-----------------------------------------------------------------------------//
 
     //ESERCIZIO 6
@@ -131,3 +131,61 @@
         console.log(arr[i]['name'],arr[i]['surname']);
       }
     }
+
+    //ESERCIZIO 7
+    //Dare la possibilità all'utente attraverso 3 prompt di
+    //aggiungere un nuovo oggetto studente inserendo
+    //nell'ordine: nome, cognome e età.
+
+    function promptStudent() {
+    var arr = [
+      student1 = {
+        "name" : "Giovanni" ,
+        "surname" : "Bernardi",
+      },
+      student2 = {
+        "name" : "Anna",
+        "surname" : "Pippoli",
+      },
+      student3 = {
+        "name" : "Barack",
+        "surname" : "Obama",
+      },
+      student4 = {
+        "name" : "Vladimir",
+        "surname" : "Putin",
+      },
+      student5 = {
+        "name" : "Pino",
+        "surname" : "Silvestre",
+      }
+    ];
+
+    var newName = prompt('Dimmi nome studente');
+    var newLastname = prompt('Dimmi cognome studente');
+    var newAge = prompt("Dimmi eta' studente");
+    var newStudent = {
+
+        'name': newName,
+        'lastname': newLastname,
+        'age': newAge
+    };
+    students.push(newStudent);
+    for (var i=0;i<students.length;i++) {
+
+        var student = students[i];
+        var name = student['name'];
+        var lastname = student['lastname'];
+        console.log(name, lastname);
+    }
+  }
+
+
+  function init() {
+    //objectStudent();
+    // arrStudent();
+    promptStudent();
+}
+
+    //JQUERY
+    $(document).ready(init);
